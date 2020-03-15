@@ -10,7 +10,7 @@ namespace Todo.Api.Controllers
     {
 
     private ITodoRepository repository;
-         public TodoItemsController(ITodoRepository todoRepository)
+    public TodoItemsController(ITodoRepository todoRepository)
         {
             repository = todoRepository ??
                 throw new ArgumentNullException(nameof(todoRepository));
